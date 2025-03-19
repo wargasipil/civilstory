@@ -8,10 +8,11 @@ function Login() {
 }
 
 function User() {
-  return <Flex gapX={1}>
+  return <Flex gapX={1} hideBelow="md">
     <Button variant="solid">My Profile</Button>
     <Button variant="outline">Log Out</Button>
   </Flex>
+    
   
   
 }
@@ -19,11 +20,13 @@ function User() {
 export default function Header({isLogin}: {isLogin: boolean}) {
   return <Box w="full">
     <Flex align="center">
-      <Navbar />
+      <Navbar isLogin={isLogin} />
       <Spacer />
+     
       {
         isLogin ? <User /> : <Login />
       }
+      
       
     </Flex>
     
