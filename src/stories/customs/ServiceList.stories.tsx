@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import Service from './Service';
+import ServiceList from './ServiceList';
 
 const meta = {
-  component: Service,
-} satisfies Meta<typeof Service>;
+  component: ServiceList,
+} satisfies Meta<typeof ServiceList>;
 
 export default meta;
 
